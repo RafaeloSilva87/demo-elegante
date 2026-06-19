@@ -96,13 +96,13 @@ function criarRaspadinhas() {
         const dica = card.querySelector('.raspadinha-dica');
         const ctx = canvas.getContext('2d');
 
-        const cores = ['#ffd3e2', '#fff1c2', '#cdeede'];
+        const cores = ['#e8d4d8', '#ede8dc', '#dde4dd'];
         ctx.fillStyle = cores[i % cores.length];
         ctx.beginPath();
         ctx.arc(85, 85, 85, 0, Math.PI * 2);
         ctx.fill();
-        ctx.fillStyle = '#4a2e44';
-        ctx.font = '700 16px Quicksand';
+        ctx.fillStyle = '#6b1a2a';
+        ctx.font = '300 16px DM Sans';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         ctx.fillText('♥', 85, 85);
